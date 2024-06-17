@@ -1,0 +1,221 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.interfase {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato button {
+    background-color: rgba(17, 216, 216, 0.8);
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Adicionando transição */
+}
+
+button:hover {
+    background-color:  rgb(24, 214, 214);
+    transform: scale(1.1); /* Aumentando o tamanho ao passar o mouse */
+}
+
+/* Estilo do cabeçalho */
+header {
+    padding: 40px 4%;
+}
+
+header > .interfase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Adicionando transição */
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header nav ul li a {
+    color: #7d7d7d;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Adicionando transição */
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    transform: scale(1.1); /* Aumentando o tamanho ao passar o mouse */
+}
+
+/* Estilo do topo do site */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+.topo-do-site .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* Estilo do sobre */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 samp {
+    color:rgb(24, 214, 214);
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+
+/* portifolio */
+section.portifolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff3e;
+}
+
+.portifolio .titulo {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.portifolio .titulo span {
+    color:rgb(24, 214, 214);
+}
+
+.portifolio .flex {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    background-repeat: 40px;
+    position: relative;
+    border-radius: 40px;
+    
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay a{
+    color:#fff;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.contato-baixo{
+    padding: 80px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
